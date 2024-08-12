@@ -9,9 +9,9 @@ function submitData() {
         alamat: document.getElementById('alamat').value
     };
 
-    fetch('https://script.google.com/macros/s/AKfycbysLTi2Fumz4OQlTV8VgZnON5EjbEorpxT6AnJx9SFlGfrn0QdLtQZKsslSTfm9EUgpoA/exec', { // Ganti YOUR_GOOGLE_SCRIPT_URL dengan URL Apps Script yang sudah di-deploy
+    fetch('https://script.google.com/macros/s/AKfycbw6gPYOTJ83zrxmfKK6aDdW0w71OHiEYEE3jh18drJA6-MvNmfZumsljuF2f5ti5vSwKA/exec', { // Ganti YOUR_GOOGLE_SCRIPT_URL dengan URL Apps Script yang sudah di-deploy
         method: 'POST',
-        mode: 'no-cors', // no-cors digunakan agar tidak memblokir permintaan lintas asal (cross-origin)
+        mode: 'cors', // no-cors digunakan agar tidak memblokir permintaan lintas asal (cross-origin)
         headers: {
             'Content-Type': 'application/json',
         },
